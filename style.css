@@ -1,0 +1,203 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+    margin: 0;           /* Supprime les marges par défaut */
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #000000;
+}
+.container {
+    width: 350px;
+    background-color: rgb(241, 99, 168);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgb(197, 15, 103);
+}
+span {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+header {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.input_field {
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 45px;
+    background: rgba(255, 255, 255, 0.449);
+}
+i {
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: #fff;
+}
+::-webkit-input-placeholder {
+    color: #fff;
+}
+.submit {
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s;
+}
+.submit:hover {
+    box-shadow: 1px 5px 7 1px rgba(0, 0, 0, 0.2);
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: #fff;
+    margin-top: 10px;
+}
+.left {
+    display: flex;
+}
+label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.navbar{
+    width: 100%; /* Prend toute la largeur de l'écran */
+    background-color: rgb(241, 99, 168); /* Couleur de fond de la navbar */
+    display: flex;
+    justify-content: center; /* Centre les liens dans la navbar */
+    padding: 20px 0;
+    position: fixed; /* Fixe la navbar en haut de l'écran */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+}
+.navbar li {
+    margin: 0 10px;
+}
+.navbar a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.navbar a:hover {
+    background-color: pink; /* Change la couleur de fond en rose plus clair au survol */
+}
+
+
+.footer {
+    background-color: rgb(241, 99, 168); /* Couleur de fond du footer */
+    padding: 5px 0;         /* Espacement autour du footer */
+    color: white;            /* Couleur du texte */
+    text-align: center;      /* Centrer le contenu */
+    position: absolute;
+    bottom: 0;               /* Placer le footer en bas de la page */
+    width: 100%;
+}
+.social-icons {
+    display: flex;               /* Disposer les icônes en ligne */
+    justify-content: center;     /* Centrer les icônes horizontalement */
+    gap: 20px;                   /* Espacement entre les icônes */
+    margin-bottom: 10px;         /* Espacement sous les icônes */
+    margin-top: 10px;
+}
+.social-icon {
+    width: 30px;                /* Taille des icônes */
+    height: 30px;               /* Taille des icônes */
+    border-radius: 50%;         /* Rendre les icônes circulaires */
+    transition: transform 0.3s; /* Animation de transformation */
+}
+.social-icon:hover {
+    transform: scale(1.1); /* Change la couleur de fond en rose plus clair au survol */
+}
+.footer-nav{
+    background-color: rgb(241, 99, 168);
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid rgb(197, 15, 103); /* Ligne séparatrice de 2px de couleur blanche */
+}
+.footer-nav li {
+    display: inline;            /* Afficher les éléments de la liste en ligne */
+    margin-right: 20px;         /* Espacement entre les éléments de la liste */
+}
+.footer-nav a {
+    color: white;               /* Couleur des liens */
+    text-decoration: none;      /* Supprimer le soulignement des liens */
+    font-size: 14px;            /* Taille de police des liens */
+}
+.footer-nav a:hover {
+    text-decoration: underline; /* Souligner le lien au survol */
+}
+/* Copyright */
+.footer-copyright {
+    background-color: rgb(241, 99, 168);
+    font-size: 12px;                       /* Taille de la police pour le texte copyright */
+    width: 100%;
+    color: white;                          /* Couleur du texte copyright */
+}
+
+.cards{
+    text-align: center;
+    border: solid;
+    background-color: rgb(241, 99, 168);
+    border-color: rgb(209, 52, 115);
+    border-radius: 8px;
+    width: 400px; /* Fixe une largeur pour que la carte soit rectangulaire */
+    height: 250px; /* Fixe une hauteur pour définir la forme de la carte */
+    box-shadow: 0 4px 8px rgb(209, 52, 115);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+} 
+.card-title{
+    color: rgb(169, 24, 82);
+    text-shadow: 5px 5px rgb(250, 199, 220);
+}
+.card-button {
+    background-color: rgb(209, 52, 115);     /* Couleur de fond verte pour le bouton d'action */
+    color: white;                  /* Couleur du texte en blanc */
+    padding: 10px 20px;            /* Espace interne : 10px vertical et 20px horizontal */
+    border: none;                  /* Supprime la bordure par défaut */
+    border-radius: 5px;            /* Coins arrondis */
+    cursor: pointer;               /* Change le curseur en main lors du survol */
+    transition: background-color 0.3s; /* Animation douce pour le changement de couleur */
+}  
